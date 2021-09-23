@@ -26,7 +26,8 @@
         "@types/node": "^12.20.26",
         "@types/react": "^17.0.24",
         "@types/react-dom": "^17.0.9",
-        "@types/styletron-engine-atomic": "^1.1.1"
+        "@types/styletron-engine-atomic": "^1.1.1",
+        "@types/styletron-react": "^5.0.3"
     },
     "eslintConfig": {
         "extends": [
