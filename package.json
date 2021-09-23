@@ -6,7 +6,8 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "prepare": "husky install"
     },
     "dependencies": {
         "@testing-library/jest-dom": "^5.14.1",
@@ -29,7 +30,10 @@
         "@types/react-dom": "^17.0.9",
         "@types/react-transition-group": "^4.4.3",
         "@types/styletron-engine-atomic": "^1.1.1",
-        "@types/styletron-react": "^5.0.3"
+        "@types/styletron-react": "^5.0.3",
+        "husky": "^7.0.2",
+        "lint-staged": "^11.1.2",
+        "prettier": "^2.4.1"
     },
     "eslintConfig": {
         "extends": [
@@ -48,5 +52,8 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "lint-staged": {
+        "**/*": "prettier --write --ignore-unknown"
     }
 }
