@@ -1,10 +1,10 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import "./App.css";
-import AboutMe from "./pages/AboutMe";
-import AboutWebsite from "./pages/AboutWebsite";
-import Contact from "./pages/Contact";
-import Home from "./pages/Home";
+import AboutMe from "../pages/AboutMe";
+import AboutWebsite from "../pages/AboutWebsite";
+import Contact from "../pages/Contact";
+import Home from "../pages/Home";
 
 const App: React.FC = () => {
     return (
