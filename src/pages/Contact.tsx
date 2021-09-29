@@ -1,8 +1,7 @@
 import React from "react";
-import { Div } from "atomize";
 
 const Contact: React.FC = () => {
-    return <Div>Contact Placeholder</Div>;
+    return <div>Contact Placeholder</div>;
 };
 
 export default Contact;
