@@ -1,25 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "semantic-ui-css/semantic.min.css";
 import App from "./main/App";
 import reportWebVitals from "./reportWebVitals";
-import { Provider as StyletronProvider, DebugEngine } from "styletron-react";
-import { Client as Styletron } from "styletron-engine-atomic";
-import { StyleReset } from "atomize";
 import { BrowserRouter as Router } from "react-router-dom";
-
-const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();
-
-const engine = new Styletron();
 
 ReactDOM.render(
     <React.StrictMode>
-        <StyletronProvider value={engine} debug={debug} debugAfterHydration>
-            <StyleReset />
-            <Router>
-                <App />
-            </Router>
-        </StyletronProvider>
+        <Router>
+            <App />
+        </Router>
     </React.StrictMode>,
     document.getElementById("root")
 );
