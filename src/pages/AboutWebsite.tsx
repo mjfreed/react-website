@@ -1,7 +1,12 @@
 import React from "react";
+import { Container } from "semantic-ui-react";
 
 const AboutWebsite: React.FC = () => {
-    return <div>About Website Placeholder</div>;
+    return (
+        <Container text style={{ marginTop: "7em" }}>
+            <p>About Website PlaceHolder</p>
+        </Container>
+    );
 };
 
 export default AboutWebsite;

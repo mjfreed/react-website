@@ -4,10 +4,12 @@ import AboutMe from "../pages/AboutMe";
 import AboutWebsite from "../pages/AboutWebsite";
 import Contact from "../pages/Contact";
 import Home from "../pages/Home";
+import Header from "./Header";
 
 const App: React.FC = () => {
     return (
         <div>
+            <Header />
             <Switch>
                 {/* If the current URL is /about, this route is rendered
               while the rest are ignored */}
