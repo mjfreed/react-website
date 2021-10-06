@@ -4,15 +4,19 @@ import { useHistory } from "react-router";
 import { MenuLocation } from "../util/constants";
 import "../App.css";
 
-// TODO: Fix bug where pointer resets to home on refresh but history does not
-// Maybe figure out the dropdown on hover thing
+// TODO: Maybe figure out the dropdown on hover thing
 
 const Header: React.FC = () => {
     const history = useHistory();
     const [pointer, setPointer] = useState("home");
 
+    useEffect(() => {
+        setPointer(localStorage.getItem("pointer") ?? "home");
+    }, [setPointer]);
+
     const handleMenuClick = (event: React.SyntheticEvent, data: MenuItemProps | DropdownItemProps) => {
         const name = data.name ? data.name : "home";
+        localStorage.setItem("pointer", name);
         setPointer(name);
         history.push(MenuLocation[name]);
     };
