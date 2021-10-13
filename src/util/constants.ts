@@ -1,6 +1,6 @@
 export const MenuLocation: { [x: string]: string } = {
-    home: "/home",
-    aboutMe: "/about",
-    aboutWebsite: "/about:website",
+    home: "/",
+    about: "/about",
+    "about:website": "/about:website",
     contact: "/contact",
 };
