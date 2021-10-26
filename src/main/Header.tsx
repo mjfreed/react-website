@@ -31,7 +31,7 @@ const Header: React.FC = () => {
 
     return (
         <div>
-            <Menu fixed="top" pointing secondary>
+            <Menu fixed="top" size="massive" pointing secondary>
                 <Menu.Item active={pointer === "home"} as="a" name="home" text="Home" onClick={handleMenuClick} />
                 <Dropdown item text="About">
                     <Dropdown.Menu>
