@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, Header, Image, List, Segment } from "semantic-ui-react";
+import { Container, Grid, Header, Icon, Image, List, Segment } from "semantic-ui-react";
 import ReactImage from "../assets/logo512.png";
 import ExtensisLogo from "../assets/Extensis_logo.jpg";
 
@@ -27,7 +27,15 @@ const Home: React.FC = () => {
                                 <Grid.Row style={{ paddingBottom: 0, paddingLeft: "1em" }}>
                                     <Header as="h1" style={{ width: "100%" }}>
                                         <Image size="massive" floated="left" src={ExtensisLogo} />
-                                        Extensis
+                                        <Container fluid>
+                                            Extensis
+                                            <div style={{ float: "right", paddingRight: "1em" }}>
+                                                <Icon size="small" name="calendar alternate" disabled />
+                                                <text style={{ fontSize: "0.6em", color: "rgba(0,0,0,.6)" }}>
+                                                    Nov 2019 - Present
+                                                </text>
+                                            </div>
+                                        </Container>
                                         <Header.Subheader>Software Engineer</Header.Subheader>
                                     </Header>
                                 </Grid.Row>
@@ -51,7 +59,15 @@ const Home: React.FC = () => {
                                 <Grid.Row style={{ paddingBottom: 0, paddingLeft: "1em" }}>
                                     <Header as="h1" style={{ width: "100%" }}>
                                         <Image size="massive" floated="left" src={ExtensisLogo} />
-                                        Extensis
+                                        <Container fluid>
+                                            Extensis
+                                            <div style={{ float: "right", paddingRight: "1em" }}>
+                                                <Icon size="small" name="calendar alternate" disabled />
+                                                <text style={{ fontSize: "0.6em", color: "rgba(0,0,0,.6)" }}>
+                                                    Apr 2019 - Nov 2019
+                                                </text>
+                                            </div>
+                                        </Container>
                                         <Header.Subheader>Software Engineer In Test</Header.Subheader>
                                     </Header>
                                 </Grid.Row>
