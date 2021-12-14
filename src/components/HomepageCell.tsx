@@ -8,6 +8,7 @@ interface IHomepageCellProps {
     subheader: string;
     dateRange: string;
     bulletPoints: string[];
+    middle?: boolean;
 }
 
 const HomepageCell: React.FC<IHomepageCellProps> = ({
@@ -16,12 +17,19 @@ const HomepageCell: React.FC<IHomepageCellProps> = ({
     subheader,
     dateRange,
     bulletPoints,
+    middle,
 }: IHomepageCellProps) => {
     return (
-        <Grid.Column floated="left">
+        <Grid.Column>
             <Grid>
-                <Grid.Row style={{ paddingBottom: 0, paddingLeft: "1em" }}>
-                    <Header as="h1" style={{ width: "100%" }}>
+                <Grid.Row
+                    style={{
+                        paddingBottom: 0,
+                        paddingLeft: middle ? "" : "1em",
+                        justifyContent: middle ? "center" : "",
+                    }}
+                >
+                    <Header as="h1" style={{ width: middle ? "33%" : "100%" }} floated="left">
                         <Image size="massive" floated="left" src={image} />
                         <Container fluid>
                             {header}
@@ -33,7 +41,7 @@ const HomepageCell: React.FC<IHomepageCellProps> = ({
                         <Header.Subheader>{subheader}</Header.Subheader>
                     </Header>
                 </Grid.Row>
-                <Grid.Row style={{ paddingTop: 0 }}>
+                <Grid.Row>
                     <Container text>
                         <List bulleted>
                             {bulletPoints.map((bp, idx) => {

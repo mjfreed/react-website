@@ -51,7 +51,52 @@ const Home: React.FC = () => {
                 </Grid>
             </Segment>
 
-            <Segment vertical></Segment>
+            <Segment vertical>
+                <HomepageCell
+                    image={ExtensisLogo}
+                    header="Extensis"
+                    subheader="Software Engineer In Test"
+                    dateRange="Apr 2019 - Nov 2019"
+                    middle
+                    bulletPoints={[
+                        "Something something something something Something something something something",
+                        "Something something something something",
+                        "Something something",
+                        "Something something something something something something something something",
+                    ]}
+                />
+            </Segment>
+
+            <Segment vertical>
+                <Grid celled="internally" columns="equal" stackable>
+                    <Grid.Row>
+                        <HomepageCell
+                            image={ExtensisLogo}
+                            header="Extensis"
+                            subheader="Software Engineer"
+                            dateRange="Nov 2019 - Present"
+                            bulletPoints={[
+                                "Something something something something Something something something something",
+                                "Something something something something",
+                                "Something something",
+                                "Something something something something something something something something",
+                            ]}
+                        />
+                        <HomepageCell
+                            image={ExtensisLogo}
+                            header="Extensis"
+                            subheader="Software Engineer In Test"
+                            dateRange="Apr 2019 - Nov 2019"
+                            bulletPoints={[
+                                "Something something something something Something something something something",
+                                "Something something something something",
+                                "Something something",
+                                "Something something something something something something something something",
+                            ]}
+                        />
+                    </Grid.Row>
+                </Grid>
+            </Segment>
         </>
     );
 };
