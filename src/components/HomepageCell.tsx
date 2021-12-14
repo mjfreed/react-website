@@ -7,50 +7,30 @@ interface IHomepageCellProps {
     header: string;
     subheader: string;
     dateRange: string;
-    bulletPoints: string[];
-    middle?: boolean;
 }
 
-const HomepageCell: React.FC<IHomepageCellProps> = ({
-    image,
-    header,
-    subheader,
-    dateRange,
-    bulletPoints,
-    middle,
-}: IHomepageCellProps) => {
+const HomepageCell: React.FC<IHomepageCellProps> = ({ image, header, subheader, dateRange }: IHomepageCellProps) => {
     return (
         <Grid.Column>
-            <Grid>
-                <Grid.Row
-                    style={{
-                        paddingBottom: 0,
-                        paddingLeft: middle ? "" : "1em",
-                        justifyContent: middle ? "center" : "",
-                    }}
-                >
-                    <Header as="h1" style={{ width: middle ? "33%" : "100%" }} floated="left">
-                        <Image size="massive" floated="left" src={image} />
-                        <Container fluid>
+            <Container fluid>
+                <Grid>
+                    <Grid.Row style={{ justifyContent: "center", paddingBottom: 0 }}>
+                        <Header as="h1" style={{ width: "10em" }} textAlign="center">
+                            <Image size="massive" floated="left" src={image} />
                             {header}
-                            <div style={{ float: "right", paddingRight: "1em" }}>
+                            <Header.Subheader>{subheader}</Header.Subheader>
+                        </Header>
+                    </Grid.Row>
+                    <Grid.Row style={{ justifyContent: "center", paddingTop: 0 }}>
+                        <Header as="h1">
+                            <div>
                                 <Icon size="small" name="calendar alternate" disabled />
                                 <text style={{ fontSize: "0.6em", color: "rgba(0,0,0,.6)" }}>{dateRange}</text>
                             </div>
-                        </Container>
-                        <Header.Subheader>{subheader}</Header.Subheader>
-                    </Header>
-                </Grid.Row>
-                <Grid.Row>
-                    <Container text>
-                        <List bulleted>
-                            {bulletPoints.map((bp, idx) => {
-                                return <List.Item key={`${header}-${idx}-${uuid()}`}>{bp}</List.Item>;
-                            })}
-                        </List>
-                    </Container>
-                </Grid.Row>
-            </Grid>
+                        </Header>
+                    </Grid.Row>
+                </Grid>
+            </Container>
         </Grid.Column>
     );
 };
