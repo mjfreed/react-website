@@ -24,12 +24,12 @@ const Home: React.FC = () => {
             </Segment>
 
             <Segment vertical>
-                <Grid celled="internally" columns="equal" stackable>
+                <Grid celled="internally" columns={2}>
                     <Grid.Row>
                         <HomepageCell
                             image={ExtensisLogo}
                             header="Extensis"
-                            subheader="Software Engineer"
+                            subheader={"Software Engineer\t\t"}
                             dateRange="Nov 2019 - Present"
                         />
                         <HomepageCell
@@ -52,7 +52,7 @@ const Home: React.FC = () => {
             </Segment>
 
             <Segment vertical>
-                <Grid celled="internally" columns="equal" stackable>
+                <Grid celled="internally" columns={2}>
                     <Grid.Row>
                         <HomepageCell
                             image={CloudPractitioner}
