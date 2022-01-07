@@ -59,13 +59,21 @@ const Home: React.FC = () => {
                         <HomepageCell
                             image={CloudPractitioner}
                             header="AWS Certified Cloud Practitioner"
-                            subheader="Link to Badge"
+                            subheader={
+                                <a href="https://www.credly.com/badges/4f0a8308-d912-461a-b402-80e07379b881/public_url">
+                                    Link to Badge
+                                </a>
+                            }
                             dateRange="Jun 2020 - Jun 2024"
                         />
                         <HomepageCell
                             image={AssociateDeveloper}
-                            header="AWS Certified Associate Developer"
-                            subheader="Link to Badge"
+                            header="AWS Certified Developer - Associate"
+                            subheader={
+                                <a href="https://www.credly.com/badges/b8baba56-3df0-4604-b767-5fc6bec08661/public_url">
+                                    Link to Badge
+                                </a>
+                            }
                             dateRange="Sep 2021 - Sep 2024"
                         />
                     </Grid.Row>

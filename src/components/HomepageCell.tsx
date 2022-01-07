@@ -1,10 +1,10 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { Grid, Header, Icon, Image } from "semantic-ui-react";
 
 interface IHomepageCellProps {
     image: string;
     header: string;
-    subheader: string;
+    subheader: string | ReactElement;
     dateRange: string;
     single?: boolean;
 }
