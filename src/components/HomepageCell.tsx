@@ -35,7 +35,7 @@ const HomepageCell: React.FC<IHomepageCellProps> = ({
                     <Header as="h1">
                         <div>
                             <Icon size="small" name="calendar alternate" disabled />
-                            <text style={{ fontSize: "0.6em", color: "rgba(0,0,0,.6)" }}>{dateRange}</text>
+                            <span style={{ fontSize: "0.6em", color: "rgba(0,0,0,.6)" }}>{dateRange}</span>
                         </div>
                     </Header>
                 </Grid.Row>

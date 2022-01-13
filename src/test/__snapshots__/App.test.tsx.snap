@@ -1,0 +1,498 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App.tsx renders the App without crashing 1`] = `
+<div>
+  <div>
+    <div>
+      <div
+        class="ui massive pointing secondary top fixed menu"
+      >
+        <a
+          class="active item"
+          text="Home"
+        >
+          Home
+        </a>
+        <div
+          aria-expanded="false"
+          class="ui item dropdown"
+          role="listbox"
+          tabindex="0"
+        >
+          <div
+            aria-atomic="true"
+            aria-live="polite"
+            class="divider text"
+            role="alert"
+          >
+            About
+          </div>
+          <i
+            aria-hidden="true"
+            class="dropdown icon"
+          />
+          <div
+            class="menu transition"
+          >
+            <a
+              aria-checked="false"
+              class="item"
+              name="about"
+              role="option"
+            >
+              <span
+                class="text"
+              >
+                Me
+              </span>
+            </a>
+            <a
+              aria-checked="false"
+              class="item"
+              name="about:website"
+              role="option"
+            >
+              <span
+                class="text"
+              >
+                Website
+              </span>
+            </a>
+          </div>
+        </div>
+        <a
+          class="item"
+          text="Contact"
+        >
+          Contact
+        </a>
+      </div>
+    </div>
+    <div
+      class="ui vertical segment"
+      style="margin-top: 3em;"
+    >
+      <div
+        class="ui container stackable equal width grid"
+      >
+        <div
+          class="middle aligned row"
+        >
+          <div
+            class="left floated column"
+          >
+            <div
+              class="ui header"
+              style="font-size: 3em;"
+            >
+              Hi! I'm Marshall Freed, a Software Engineer
+            </div>
+          </div>
+          <div
+            class="right floated column"
+          >
+            <img
+              class="ui large rounded image"
+              src="logo512.png"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="ui vertical segment"
+    >
+      <div
+        class="ui internally celled two column grid"
+      >
+        <div
+          class="row"
+        >
+          <div
+            class="column"
+            style="padding: 14px;"
+          >
+            <div
+              class="ui grid"
+            >
+              <div
+                class="centered row"
+              >
+                <div
+                  class="four wide column"
+                >
+                  <img
+                    class="ui right floated image"
+                    height="auto"
+                    src="Extensis_logo.jpg"
+                    width="60px"
+                  />
+                </div>
+                <div
+                  class="center aligned six wide column"
+                >
+                  <h1
+                    class="ui header"
+                  >
+                    Extensis
+                    <div
+                      class="sub header"
+                    >
+                      Software Engineer		
+                    </div>
+                  </h1>
+                </div>
+                <div
+                  class="four wide column"
+                />
+              </div>
+              <div
+                class="centered row"
+              >
+                <h1
+                  class="ui header"
+                >
+                  <div>
+                    <i
+                      aria-hidden="true"
+                      class="calendar alternate small disabled icon"
+                    />
+                    <span
+                      style="font-size: 0.6em; color: rgba(0, 0, 0, 0.6);"
+                    >
+                      Nov 2019 - Present
+                    </span>
+                  </div>
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div
+            class="column"
+            style="padding: 14px;"
+          >
+            <div
+              class="ui grid"
+            >
+              <div
+                class="centered row"
+              >
+                <div
+                  class="four wide column"
+                >
+                  <img
+                    class="ui right floated image"
+                    height="auto"
+                    src="Extensis_logo.jpg"
+                    width="60px"
+                  />
+                </div>
+                <div
+                  class="center aligned six wide column"
+                >
+                  <h1
+                    class="ui header"
+                  >
+                    Extensis
+                    <div
+                      class="sub header"
+                    >
+                      Software Engineer In Test
+                    </div>
+                  </h1>
+                </div>
+                <div
+                  class="four wide column"
+                />
+              </div>
+              <div
+                class="centered row"
+              >
+                <h1
+                  class="ui header"
+                >
+                  <div>
+                    <i
+                      aria-hidden="true"
+                      class="calendar alternate small disabled icon"
+                    />
+                    <span
+                      style="font-size: 0.6em; color: rgba(0, 0, 0, 0.6);"
+                    >
+                      Apr 2019 - Nov 2019
+                    </span>
+                  </div>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="ui vertical segment"
+    >
+      <div
+        class="column"
+        style="padding: 14px;"
+      >
+        <div
+          class="ui grid"
+        >
+          <div
+            class="centered row"
+          >
+            <div
+              class="four wide column"
+            >
+              <img
+                class="ui right floated image"
+                height="auto"
+                src="TEUChain.jpg"
+                width="60px"
+              />
+            </div>
+            <div
+              class="center aligned four wide column"
+            >
+              <h1
+                class="ui header"
+              >
+                TEUChain
+                <div
+                  class="sub header"
+                >
+                  Software Development Engineer - Contract
+                </div>
+              </h1>
+            </div>
+            <div
+              class="four wide column"
+            />
+          </div>
+          <div
+            class="centered row"
+          >
+            <h1
+              class="ui header"
+            >
+              <div>
+                <i
+                  aria-hidden="true"
+                  class="calendar alternate small disabled icon"
+                />
+                <span
+                  style="font-size: 0.6em; color: rgba(0, 0, 0, 0.6);"
+                >
+                  Aug 2018 - Feb 2019
+                </span>
+              </div>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="ui vertical segment"
+    >
+      <div
+        class="ui internally celled two column grid"
+      >
+        <div
+          class="row"
+        >
+          <div
+            class="column"
+            style="padding: 14px;"
+          >
+            <div
+              class="ui grid"
+            >
+              <div
+                class="centered row"
+              >
+                <div
+                  class="four wide column"
+                >
+                  <img
+                    class="ui right floated image"
+                    height="auto"
+                    src="cloud_practitioner.png"
+                    width="60px"
+                  />
+                </div>
+                <div
+                  class="center aligned six wide column"
+                >
+                  <h1
+                    class="ui header"
+                  >
+                    AWS Certified Cloud Practitioner
+                    <div
+                      class="sub header"
+                    >
+                      <a
+                        href="https://www.credly.com/badges/4f0a8308-d912-461a-b402-80e07379b881/public_url"
+                      >
+                        Link to Badge
+                      </a>
+                    </div>
+                  </h1>
+                </div>
+                <div
+                  class="four wide column"
+                />
+              </div>
+              <div
+                class="centered row"
+              >
+                <h1
+                  class="ui header"
+                >
+                  <div>
+                    <i
+                      aria-hidden="true"
+                      class="calendar alternate small disabled icon"
+                    />
+                    <span
+                      style="font-size: 0.6em; color: rgba(0, 0, 0, 0.6);"
+                    >
+                      Jun 2020 - Jun 2024
+                    </span>
+                  </div>
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div
+            class="column"
+            style="padding: 14px;"
+          >
+            <div
+              class="ui grid"
+            >
+              <div
+                class="centered row"
+              >
+                <div
+                  class="four wide column"
+                >
+                  <img
+                    class="ui right floated image"
+                    height="auto"
+                    src="associate_developer.png"
+                    width="60px"
+                  />
+                </div>
+                <div
+                  class="center aligned six wide column"
+                >
+                  <h1
+                    class="ui header"
+                  >
+                    AWS Certified Developer - Associate
+                    <div
+                      class="sub header"
+                    >
+                      <a
+                        href="https://www.credly.com/badges/b8baba56-3df0-4604-b767-5fc6bec08661/public_url"
+                      >
+                        Link to Badge
+                      </a>
+                    </div>
+                  </h1>
+                </div>
+                <div
+                  class="four wide column"
+                />
+              </div>
+              <div
+                class="centered row"
+              >
+                <h1
+                  class="ui header"
+                >
+                  <div>
+                    <i
+                      aria-hidden="true"
+                      class="calendar alternate small disabled icon"
+                    />
+                    <span
+                      style="font-size: 0.6em; color: rgba(0, 0, 0, 0.6);"
+                    >
+                      Sep 2021 - Sep 2024
+                    </span>
+                  </div>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="ui vertical segment"
+    >
+      <div
+        class="column"
+        style="padding: 14px;"
+      >
+        <div
+          class="ui grid"
+        >
+          <div
+            class="centered row"
+          >
+            <div
+              class="four wide column"
+            >
+              <img
+                class="ui right floated image"
+                height="auto"
+                src="WLogo.png"
+                width="60px"
+              />
+            </div>
+            <div
+              class="center aligned four wide column"
+            >
+              <h1
+                class="ui header"
+              >
+                University of Washington, Tacoma
+                <div
+                  class="sub header"
+                >
+                  B.S. in Computer Science
+                </div>
+              </h1>
+            </div>
+            <div
+              class="four wide column"
+            />
+          </div>
+          <div
+            class="centered row"
+          >
+            <h1
+              class="ui header"
+            >
+              <div>
+                <i
+                  aria-hidden="true"
+                  class="calendar alternate small disabled icon"
+                />
+                <span
+                  style="font-size: 0.6em; color: rgba(0, 0, 0, 0.6);"
+                >
+                  Jun 2016 - Jun 2018
+                </span>
+              </div>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
