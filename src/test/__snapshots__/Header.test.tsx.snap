@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header.tsx renders without crashing 1`] = `
+<div>
+  <div>
+    <div
+      class="ui massive pointing secondary top fixed menu"
+    >
+      <a
+        class="active item"
+        data-testid="header-home"
+        text="Home"
+      >
+        Home
+      </a>
+      <div
+        aria-expanded="false"
+        class="ui item dropdown"
+        data-testid="header-about"
+        role="listbox"
+        tabindex="0"
+      >
+        <div
+          aria-atomic="true"
+          aria-live="polite"
+          class="divider text"
+          role="alert"
+        >
+          About
+        </div>
+        <i
+          aria-hidden="true"
+          class="dropdown icon"
+        />
+        <div
+          class="menu transition"
+        >
+          <a
+            aria-checked="false"
+            class="item"
+            data-testid="header-about-me"
+            name="about"
+            role="option"
+          >
+            <span
+              class="text"
+            >
+              Me
+            </span>
+          </a>
+          <a
+            aria-checked="false"
+            class="item"
+            data-testid="header-about-website"
+            name="about:website"
+            role="option"
+          >
+            <span
+              class="text"
+            >
+              Website
+            </span>
+          </a>
+        </div>
+      </div>
+      <a
+        class="item"
+        data-testid="header-contact"
+        text="Contact"
+      >
+        Contact
+      </a>
+    </div>
+  </div>
+</div>
+`;

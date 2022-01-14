@@ -9,6 +9,7 @@ exports[`App.tsx renders the App without crashing 1`] = `
       >
         <a
           class="active item"
+          data-testid="header-home"
           text="Home"
         >
           Home
@@ -16,6 +17,7 @@ exports[`App.tsx renders the App without crashing 1`] = `
         <div
           aria-expanded="false"
           class="ui item dropdown"
+          data-testid="header-about"
           role="listbox"
           tabindex="0"
         >
@@ -37,6 +39,7 @@ exports[`App.tsx renders the App without crashing 1`] = `
             <a
               aria-checked="false"
               class="item"
+              data-testid="header-about-me"
               name="about"
               role="option"
             >
@@ -49,6 +52,7 @@ exports[`App.tsx renders the App without crashing 1`] = `
             <a
               aria-checked="false"
               class="item"
+              data-testid="header-about-website"
               name="about:website"
               role="option"
             >
@@ -62,6 +66,7 @@ exports[`App.tsx renders the App without crashing 1`] = `
         </div>
         <a
           class="item"
+          data-testid="header-contact"
           text="Contact"
         >
           Contact

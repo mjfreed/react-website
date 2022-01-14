@@ -32,8 +32,15 @@ const Header: React.FC = () => {
     return (
         <div>
             <Menu fixed="top" size="massive" pointing secondary>
-                <Menu.Item active={pointer === "home"} as="a" name="home" text="Home" onClick={handleMenuClick} />
-                <Dropdown item text="About">
+                <Menu.Item
+                    active={pointer === "home"}
+                    data-testid="header-home"
+                    as="a"
+                    name="home"
+                    text="Home"
+                    onClick={handleMenuClick}
+                />
+                <Dropdown item text="About" data-testid="header-about">
                     <Dropdown.Menu>
                         <Dropdown.Item
                             active={pointer === "about"}
@@ -41,6 +48,7 @@ const Header: React.FC = () => {
                             name="about"
                             text="Me"
                             onClick={handleMenuClick}
+                            data-testid="header-about-me"
                         />
                         <Dropdown.Item
                             active={pointer === "about:website"}
@@ -48,6 +56,7 @@ const Header: React.FC = () => {
                             name="about:website"
                             text="Website"
                             onClick={handleMenuClick}
+                            data-testid="header-about-website"
                         />
                     </Dropdown.Menu>
                 </Dropdown>
@@ -57,6 +66,7 @@ const Header: React.FC = () => {
                     name="contact"
                     text="Contact"
                     onClick={handleMenuClick}
+                    data-testid="header-contact"
                 />
             </Menu>
         </div>
