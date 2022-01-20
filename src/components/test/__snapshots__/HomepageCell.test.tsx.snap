@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomepageCell.tsx renders without crashing 1`] = `
+<div>
+  <div
+    class="column"
+    style="padding: 14px;"
+  >
+    <div
+      class="ui grid"
+    >
+      <div
+        class="centered row"
+      >
+        <div
+          class="four wide column"
+        >
+          <img
+            class="ui right floated image"
+            data-testid="homepagecell-image"
+            height="auto"
+            src="WLogo.png"
+            width="60px"
+          />
+        </div>
+        <div
+          class="center aligned six wide column"
+        >
+          <h1
+            class="ui header"
+            data-testid="homepagecell-header"
+          >
+            This is a header
+            <div
+              class="sub header"
+              data-testid="homepagecell-subheader"
+            >
+              This is a subheader
+            </div>
+          </h1>
+        </div>
+        <div
+          class="four wide column"
+        />
+      </div>
+      <div
+        class="centered row"
+      >
+        <h1
+          class="ui header"
+          data-testid="homepagecell-date-header"
+        >
+          <div>
+            <i
+              aria-hidden="true"
+              class="calendar alternate small disabled icon"
+            />
+            <span
+              data-testid="homepagecell-date-range"
+              style="font-size: 0.6em; color: rgba(0, 0, 0, 0.6);"
+            >
+              Nov 2019 - Nov 2020
+            </span>
+          </div>
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -21,21 +21,32 @@ const HomepageCell: React.FC<IHomepageCellProps> = ({
             <Grid>
                 <Grid.Row centered>
                     <Grid.Column width="4">
-                        <Image src={image} width="60px" height="auto" floated="right" />
+                        <Image
+                            src={image}
+                            width="60px"
+                            height="auto"
+                            floated="right"
+                            data-testid="homepagecell-image"
+                        />
                     </Grid.Column>
                     <Grid.Column width={single ? 4 : 6} textAlign="center">
-                        <Header as="h1">
+                        <Header as="h1" data-testid="homepagecell-header">
                             {header}
-                            <Header.Subheader>{subheader}</Header.Subheader>
+                            <Header.Subheader data-testid="homepagecell-subheader">{subheader}</Header.Subheader>
                         </Header>
                     </Grid.Column>
                     <Grid.Column width="4" />
                 </Grid.Row>
                 <Grid.Row centered>
-                    <Header as="h1">
+                    <Header as="h1" data-testid="homepagecell-date-header">
                         <div>
                             <Icon size="small" name="calendar alternate" disabled />
-                            <span style={{ fontSize: "0.6em", color: "rgba(0,0,0,.6)" }}>{dateRange}</span>
+                            <span
+                                data-testid="homepagecell-date-range"
+                                style={{ fontSize: "0.6em", color: "rgba(0,0,0,.6)" }}
+                            >
+                                {dateRange}
+                            </span>
                         </div>
                     </Header>
                 </Grid.Row>
