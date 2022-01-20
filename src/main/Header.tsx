@@ -20,13 +20,11 @@ const Header: React.FC = () => {
 
     const handleMenuClick = (event: React.SyntheticEvent, data: MenuItemProps | DropdownItemProps) => {
         const name = data.name ? data.name : "home";
-        console.log("name: ", name);
 
         localStorage.setItem("pointer", name);
         setPointer(name);
 
         history.push(MenuLocation[name]);
-        console.log("pointer", pointer);
     };
 
     return (
@@ -34,11 +32,11 @@ const Header: React.FC = () => {
             <Menu fixed="top" size="massive" pointing secondary>
                 <Menu.Item
                     active={pointer === "home"}
-                    data-testid="header-home"
                     as="a"
                     name="home"
                     text="Home"
                     onClick={handleMenuClick}
+                    data-testid="header-home"
                 />
                 <Dropdown item text="About" data-testid="header-about">
                     <Dropdown.Menu>
