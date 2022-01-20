@@ -1,0 +1,467 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home.tsx renders without crashing 1`] = `
+<div>
+  <div
+    class="ui vertical segment"
+    style="margin-top: 3em;"
+  >
+    <div
+      class="ui container stackable equal width grid"
+    >
+      <div
+        class="middle aligned row"
+      >
+        <div
+          class="left floated column"
+        >
+          <div
+            class="ui header"
+            style="font-size: 3em;"
+          >
+            Hi! I'm Marshall Freed, a Software Engineer
+          </div>
+        </div>
+        <div
+          class="right floated column"
+        >
+          <img
+            class="ui large rounded image"
+            src="logo512.png"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="ui vertical segment"
+  >
+    <div
+      class="ui internally celled two column grid"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="column"
+          style="padding: 14px;"
+        >
+          <div
+            class="ui grid"
+          >
+            <div
+              class="centered row"
+            >
+              <div
+                class="four wide column"
+              >
+                <img
+                  class="ui right floated image"
+                  data-testid="homepagecell-image"
+                  height="auto"
+                  src="Extensis_logo.jpg"
+                  width="60px"
+                />
+              </div>
+              <div
+                class="center aligned six wide column"
+                data-testid="homepagecell-header-col"
+              >
+                <h1
+                  class="ui header"
+                  data-testid="homepagecell-header"
+                >
+                  Extensis
+                  <div
+                    class="sub header"
+                    data-testid="homepagecell-subheader"
+                  >
+                    Software Engineer		
+                  </div>
+                </h1>
+              </div>
+              <div
+                class="four wide column"
+              />
+            </div>
+            <div
+              class="centered row"
+            >
+              <h1
+                class="ui header"
+                data-testid="homepagecell-date-header"
+              >
+                <div>
+                  <i
+                    aria-hidden="true"
+                    class="calendar alternate small disabled icon"
+                  />
+                  <span
+                    data-testid="homepagecell-date-range"
+                    style="font-size: 0.6em; color: rgba(0, 0, 0, 0.6);"
+                  >
+                    Nov 2019 - Present
+                  </span>
+                </div>
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div
+          class="column"
+          style="padding: 14px;"
+        >
+          <div
+            class="ui grid"
+          >
+            <div
+              class="centered row"
+            >
+              <div
+                class="four wide column"
+              >
+                <img
+                  class="ui right floated image"
+                  data-testid="homepagecell-image"
+                  height="auto"
+                  src="Extensis_logo.jpg"
+                  width="60px"
+                />
+              </div>
+              <div
+                class="center aligned six wide column"
+                data-testid="homepagecell-header-col"
+              >
+                <h1
+                  class="ui header"
+                  data-testid="homepagecell-header"
+                >
+                  Extensis
+                  <div
+                    class="sub header"
+                    data-testid="homepagecell-subheader"
+                  >
+                    Software Engineer In Test
+                  </div>
+                </h1>
+              </div>
+              <div
+                class="four wide column"
+              />
+            </div>
+            <div
+              class="centered row"
+            >
+              <h1
+                class="ui header"
+                data-testid="homepagecell-date-header"
+              >
+                <div>
+                  <i
+                    aria-hidden="true"
+                    class="calendar alternate small disabled icon"
+                  />
+                  <span
+                    data-testid="homepagecell-date-range"
+                    style="font-size: 0.6em; color: rgba(0, 0, 0, 0.6);"
+                  >
+                    Apr 2019 - Nov 2019
+                  </span>
+                </div>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="ui vertical segment"
+  >
+    <div
+      class="column"
+      style="padding: 14px;"
+    >
+      <div
+        class="ui grid"
+      >
+        <div
+          class="centered row"
+        >
+          <div
+            class="four wide column"
+          >
+            <img
+              class="ui right floated image"
+              data-testid="homepagecell-image"
+              height="auto"
+              src="TEUChain.jpg"
+              width="60px"
+            />
+          </div>
+          <div
+            class="center aligned four wide column"
+            data-testid="homepagecell-header-col"
+          >
+            <h1
+              class="ui header"
+              data-testid="homepagecell-header"
+            >
+              TEUChain
+              <div
+                class="sub header"
+                data-testid="homepagecell-subheader"
+              >
+                Software Development Engineer - Contract
+              </div>
+            </h1>
+          </div>
+          <div
+            class="four wide column"
+          />
+        </div>
+        <div
+          class="centered row"
+        >
+          <h1
+            class="ui header"
+            data-testid="homepagecell-date-header"
+          >
+            <div>
+              <i
+                aria-hidden="true"
+                class="calendar alternate small disabled icon"
+              />
+              <span
+                data-testid="homepagecell-date-range"
+                style="font-size: 0.6em; color: rgba(0, 0, 0, 0.6);"
+              >
+                Aug 2018 - Feb 2019
+              </span>
+            </div>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="ui vertical segment"
+  >
+    <div
+      class="ui internally celled two column grid"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="column"
+          style="padding: 14px;"
+        >
+          <div
+            class="ui grid"
+          >
+            <div
+              class="centered row"
+            >
+              <div
+                class="four wide column"
+              >
+                <img
+                  class="ui right floated image"
+                  data-testid="homepagecell-image"
+                  height="auto"
+                  src="cloud_practitioner.png"
+                  width="60px"
+                />
+              </div>
+              <div
+                class="center aligned six wide column"
+                data-testid="homepagecell-header-col"
+              >
+                <h1
+                  class="ui header"
+                  data-testid="homepagecell-header"
+                >
+                  AWS Certified Cloud Practitioner
+                  <div
+                    class="sub header"
+                    data-testid="homepagecell-subheader"
+                  >
+                    <a
+                      href="https://www.credly.com/badges/4f0a8308-d912-461a-b402-80e07379b881/public_url"
+                    >
+                      Link to Badge
+                    </a>
+                  </div>
+                </h1>
+              </div>
+              <div
+                class="four wide column"
+              />
+            </div>
+            <div
+              class="centered row"
+            >
+              <h1
+                class="ui header"
+                data-testid="homepagecell-date-header"
+              >
+                <div>
+                  <i
+                    aria-hidden="true"
+                    class="calendar alternate small disabled icon"
+                  />
+                  <span
+                    data-testid="homepagecell-date-range"
+                    style="font-size: 0.6em; color: rgba(0, 0, 0, 0.6);"
+                  >
+                    Jun 2020 - Jun 2024
+                  </span>
+                </div>
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div
+          class="column"
+          style="padding: 14px;"
+        >
+          <div
+            class="ui grid"
+          >
+            <div
+              class="centered row"
+            >
+              <div
+                class="four wide column"
+              >
+                <img
+                  class="ui right floated image"
+                  data-testid="homepagecell-image"
+                  height="auto"
+                  src="associate_developer.png"
+                  width="60px"
+                />
+              </div>
+              <div
+                class="center aligned six wide column"
+                data-testid="homepagecell-header-col"
+              >
+                <h1
+                  class="ui header"
+                  data-testid="homepagecell-header"
+                >
+                  AWS Certified Developer - Associate
+                  <div
+                    class="sub header"
+                    data-testid="homepagecell-subheader"
+                  >
+                    <a
+                      href="https://www.credly.com/badges/b8baba56-3df0-4604-b767-5fc6bec08661/public_url"
+                    >
+                      Link to Badge
+                    </a>
+                  </div>
+                </h1>
+              </div>
+              <div
+                class="four wide column"
+              />
+            </div>
+            <div
+              class="centered row"
+            >
+              <h1
+                class="ui header"
+                data-testid="homepagecell-date-header"
+              >
+                <div>
+                  <i
+                    aria-hidden="true"
+                    class="calendar alternate small disabled icon"
+                  />
+                  <span
+                    data-testid="homepagecell-date-range"
+                    style="font-size: 0.6em; color: rgba(0, 0, 0, 0.6);"
+                  >
+                    Sep 2021 - Sep 2024
+                  </span>
+                </div>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="ui vertical segment"
+  >
+    <div
+      class="column"
+      style="padding: 14px;"
+    >
+      <div
+        class="ui grid"
+      >
+        <div
+          class="centered row"
+        >
+          <div
+            class="four wide column"
+          >
+            <img
+              class="ui right floated image"
+              data-testid="homepagecell-image"
+              height="auto"
+              src="WLogo.png"
+              width="60px"
+            />
+          </div>
+          <div
+            class="center aligned four wide column"
+            data-testid="homepagecell-header-col"
+          >
+            <h1
+              class="ui header"
+              data-testid="homepagecell-header"
+            >
+              University of Washington, Tacoma
+              <div
+                class="sub header"
+                data-testid="homepagecell-subheader"
+              >
+                B.S. in Computer Science
+              </div>
+            </h1>
+          </div>
+          <div
+            class="four wide column"
+          />
+        </div>
+        <div
+          class="centered row"
+        >
+          <h1
+            class="ui header"
+            data-testid="homepagecell-date-header"
+          >
+            <div>
+              <i
+                aria-hidden="true"
+                class="calendar alternate small disabled icon"
+              />
+              <span
+                data-testid="homepagecell-date-range"
+                style="font-size: 0.6em; color: rgba(0, 0, 0, 0.6);"
+              >
+                Jun 2016 - Jun 2018
+              </span>
+            </div>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

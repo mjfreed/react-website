@@ -1,8 +1,8 @@
-import { render, RenderResult } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import React from "react";
 import { MemoryRouter } from "react-router";
-import HomepageCell from "../HomepageCell";
 import WLogo from "../../assets/WLogo.png";
+import HomepageCell from "../HomepageCell";
 
 const getRenderedHomepageCell = (single?: boolean) => {
     return render(
