@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { render, RenderResult } from "@testing-library/react";
 import React from "react";
 import { MemoryRouter } from "react-router";
 import HomepageCell from "../HomepageCell";
@@ -29,5 +29,16 @@ describe("HomepageCell.tsx", () => {
 
         expect(getByTestId("homepagecell-header").textContent?.includes("This is a header")).toBeTruthy();
         expect(getByTestId("homepagecell-subheader").textContent).toEqual("This is a subheader");
+        expect(getByTestId("homepagecell-date-range").textContent).toEqual("Nov 2019 - Nov 2020");
+    });
+
+    it("renders with the correct style", () => {
+        let result = getRenderedHomepageCell();
+        expect(result.getByTestId("homepagecell-header-col")).toHaveClass("center aligned six wide column");
+        result.unmount();
+
+        // render Homepagecell with single attribute
+        result = getRenderedHomepageCell(true);
+        expect(result.getByTestId("homepagecell-header-col")).toHaveClass("center aligned four wide column");
     });
 });

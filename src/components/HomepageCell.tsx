@@ -29,7 +29,7 @@ const HomepageCell: React.FC<IHomepageCellProps> = ({
                             data-testid="homepagecell-image"
                         />
                     </Grid.Column>
-                    <Grid.Column width={single ? 4 : 6} textAlign="center">
+                    <Grid.Column width={single ? 4 : 6} textAlign="center" data-testid="homepagecell-header-col">
                         <Header as="h1" data-testid="homepagecell-header">
                             {header}
                             <Header.Subheader data-testid="homepagecell-subheader">{subheader}</Header.Subheader>

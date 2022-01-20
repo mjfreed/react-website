@@ -25,6 +25,7 @@ exports[`HomepageCell.tsx renders without crashing 1`] = `
         </div>
         <div
           class="center aligned six wide column"
+          data-testid="homepagecell-header-col"
         >
           <h1
             class="ui header"

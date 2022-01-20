@@ -136,6 +136,7 @@ exports[`App.tsx renders the App without crashing 1`] = `
                 </div>
                 <div
                   class="center aligned six wide column"
+                  data-testid="homepagecell-header-col"
                 >
                   <h1
                     class="ui header"
@@ -200,6 +201,7 @@ exports[`App.tsx renders the App without crashing 1`] = `
                 </div>
                 <div
                   class="center aligned six wide column"
+                  data-testid="homepagecell-header-col"
                 >
                   <h1
                     class="ui header"
@@ -270,6 +272,7 @@ exports[`App.tsx renders the App without crashing 1`] = `
             </div>
             <div
               class="center aligned four wide column"
+              data-testid="homepagecell-header-col"
             >
               <h1
                 class="ui header"
@@ -344,6 +347,7 @@ exports[`App.tsx renders the App without crashing 1`] = `
                 </div>
                 <div
                   class="center aligned six wide column"
+                  data-testid="homepagecell-header-col"
                 >
                   <h1
                     class="ui header"
@@ -412,6 +416,7 @@ exports[`App.tsx renders the App without crashing 1`] = `
                 </div>
                 <div
                   class="center aligned six wide column"
+                  data-testid="homepagecell-header-col"
                 >
                   <h1
                     class="ui header"
@@ -486,6 +491,7 @@ exports[`App.tsx renders the App without crashing 1`] = `
             </div>
             <div
               class="center aligned four wide column"
+              data-testid="homepagecell-header-col"
             >
               <h1
                 class="ui header"
