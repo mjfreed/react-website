@@ -15,7 +15,11 @@ const Home: React.FC = () => {
                 <Grid container stackable columns="equal">
                     <Grid.Row verticalAlign="middle">
                         <Grid.Column floated="left">
-                            <Header style={{ fontSize: "3em" }}>Hi! I'm Marshall Freed, a Software Engineer</Header>
+                            <Header style={{ fontSize: "3em" }}>
+                                <span>Hi! I'm Marshall Freed,</span>
+                                <br />
+                                <span>a Software Engineer</span>
+                            </Header>
                         </Grid.Column>
                         <Grid.Column floated="right">
                             <Image size="large" rounded src={ReactImage} />

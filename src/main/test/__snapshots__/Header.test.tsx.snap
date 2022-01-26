@@ -5,6 +5,7 @@ exports[`Header.tsx renders without crashing 1`] = `
   <div>
     <div
       class="ui massive pointing secondary top fixed menu"
+      style="background-color: rgb(255, 255, 255);"
     >
       <a
         class="active item"

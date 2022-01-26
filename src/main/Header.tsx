@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useHistory, useLocation } from "react-router";
 import { Dropdown, DropdownItemProps, Menu, MenuItemProps } from "semantic-ui-react";
-import "../App.css";
 import { MenuLocation } from "../util/constants";
 
 // TODO: Maybe figure out the dropdown on hover thing
@@ -29,7 +28,7 @@ const Header: React.FC = () => {
 
     return (
         <div>
-            <Menu fixed="top" size="massive" pointing secondary>
+            <Menu fixed="top" size="massive" pointing secondary style={{ backgroundColor: "#FFFFFF" }}>
                 <Menu.Item
                     active={pointer === "home"}
                     as="a"

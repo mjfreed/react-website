@@ -19,7 +19,13 @@ exports[`Home.tsx renders without crashing 1`] = `
             class="ui header"
             style="font-size: 3em;"
           >
-            Hi! I'm Marshall Freed, a Software Engineer
+            <span>
+              Hi! I'm Marshall Freed,
+            </span>
+            <br />
+            <span>
+              a Software Engineer
+            </span>
           </div>
         </div>
         <div

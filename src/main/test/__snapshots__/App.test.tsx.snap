@@ -6,6 +6,7 @@ exports[`App.tsx renders the App without crashing 1`] = `
     <div>
       <div
         class="ui massive pointing secondary top fixed menu"
+        style="background-color: rgb(255, 255, 255);"
       >
         <a
           class="active item"
@@ -90,7 +91,13 @@ exports[`App.tsx renders the App without crashing 1`] = `
               class="ui header"
               style="font-size: 3em;"
             >
-              Hi! I'm Marshall Freed, a Software Engineer
+              <span>
+                Hi! I'm Marshall Freed,
+              </span>
+              <br />
+              <span>
+                a Software Engineer
+              </span>
             </div>
           </div>
           <div
