@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutMePhotoCell.tsx renders without crashing 1`] = `
+<div>
+  <div
+    class="column"
+  >
+    <div
+      class="ui center aligned header"
+      style="font-size: 3em;"
+    >
+      Hello, World!
+    </div>
+    <div
+      class="ui text container"
+      style="font-size: 1.5em;"
+    >
+      
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et porta sapien, nec molestie nisl. Cras ornare,
+    nibh at placerat fermentum, ante sapien auctor quam, sit amet vulputate velit sapien nec ex. Duis iaculis eget
+    mauris vel ornare. Nulla laoreet turpis sapien, sed ornare libero dictum aliquam. Quisque consequat interdum
+    tortor nec aliquet. Cras eget ex eros. Suspendisse venenatis egestas felis, nec efficitur turpis iaculis ut.
+    Aliquam erat volutpat. In lobortis sagittis congue. Suspendisse ultrices nibh quis libero placerat, nec interdum tellus mattis.
+
+    </div>
+  </div>
+</div>
+`;

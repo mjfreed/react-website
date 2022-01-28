@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutMePhotoCell.tsx renders without crashing 1`] = `
+<div>
+  <div
+    class="middle aligned column"
+    style="justify-content: center; align-items: center; display: flex;"
+  >
+    <img
+      class="ui medium image"
+      src="logo512.png"
+    />
+  </div>
+</div>
+`;
