@@ -50,7 +50,10 @@ jobs:
 workflows:
   build-project:
     jobs:
-      - build
+      - setup-nvm
+      - build:
+          requires:
+            - setup-nvm
       - test:
           requires:
             - build
