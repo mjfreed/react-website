@@ -1,6 +1,6 @@
 export const dummyText: string = `
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisi lacus, pellentesque nec nunc at, tempor tristique nulla. Duis ornare eget nunc id euismod. Nullam efficitur tellus eu mi porttitor, a bibendum nibh elementum. Donec varius ut ligula eget laoreet. Quisque justo mauris, pellentesque eget sagittis sed, posuere sed lectus. Nunc congue urna vel sapien sagittis, vel tincidunt massa interdum. Aliquam lacinia nisl id erat feugiat egestas. Maecenas porta egestas libero, sed vehicula libero placerat nec. 
-`
+`;
 
 export const workplaceBlurb: string = `
     I have been in the industry since August of 2018, the summer after my graduation. I got my start as a Full Stack Software Engineer using React and TypeScript
