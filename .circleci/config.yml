@@ -13,12 +13,16 @@ commands:
     steps:
       - run: npm run test
 
+executors:
+  node-docker:
+    docker:
+      - image: cimg/node:16.13.0
+
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
-  setup-nvm:
-    docker:
-      - image: cimg/node:16.13.0
+  build-and-test:
+    executor: node-docker
     working_directory: ~/react-website
     steps:
       - checkout
@@ -28,21 +32,8 @@ jobs:
             curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
             echo 'export NVM_DIR=$HOME/.nvm' >> $BASH_ENV
             echo 'source $NVM_DIR/nvm.sh' >> $BASH_ENV
-  build:
-    # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
-    # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
-    docker:
-      - image: cimg/node:16.13.0
-    # Add steps to the job
-    # See: https://circleci.com/docs/2.0/configuration-reference/#steps
-    working_directory: ~/react-website
-    steps:
       - set-node-version
       - install-deps-cmd
-  test:
-    docker:
-      - image: cimg/node:16.13.0
-    steps:
       - run-unit-tests-cmd
 
 # Invoke jobs via workflows
@@ -50,10 +41,4 @@ jobs:
 workflows:
   build-project:
     jobs:
-      - setup-nvm
-      - build:
-          requires:
-            - setup-nvm
-      - test:
-          requires:
-            - build
+      - build-and-test
