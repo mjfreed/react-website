@@ -17,6 +17,8 @@ commands:
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
   setup-nvm:
+    docker:
+      - image: cimg/node:16.13.0
     command: |
       curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
       echo 'export NVM_DIR=$HOME/.nvm' >> $BASH_ENV
