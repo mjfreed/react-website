@@ -1,0 +1,2 @@
+#Ignore circleci
+.circleci/config.yml
