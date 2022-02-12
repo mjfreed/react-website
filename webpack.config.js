@@ -6,8 +6,13 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(tsx|ts)?$/,
-                use: "ts-loader",
+                test: /\.tsx?$/,
+                loader: "ts-loader",
+                options: {
+                    compilerOptions: {
+                        noEmit: false,
+                    },
+                },
                 exclude: /node_modules/,
             },
             {
