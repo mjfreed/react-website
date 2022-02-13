@@ -9,6 +9,9 @@ commands:
   run-unit-tests-cmd:
     steps:
       - run: npm run test
+  build-project-cmd:
+    steps:
+      - run: npm run build
 
 executors:
   node-docker:
@@ -38,6 +41,14 @@ jobs:
       - restore_cache:
           key: v1-deps-{{ checksum "package-lock.json" }}
       - run-unit-tests-cmd
+  build:
+    executor: node-docker
+    working_directory: ~/react-website
+    steps:
+      - checkout
+      - restore_cache:
+          key: v1-deps-{{ checksum "package-lock.json" }}
+      - build-project-cmd
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
@@ -48,3 +59,6 @@ workflows:
       - test:
           requires:
           - install-deps
+      - build:
+          requires:
+          - test
