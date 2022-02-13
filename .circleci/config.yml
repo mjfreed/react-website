@@ -16,7 +16,10 @@ commands:
 executors:
   node-docker:
     docker:
-      - image: cimg/node:16.13.0
+      - image: mjfreed/circleci-images:0.0.1
+        auth:
+          username: mjfreed
+          password: $DOCKER_PASSWORD
 
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
@@ -26,12 +29,6 @@ jobs:
     working_directory: ~/react-website
     steps:
       - checkout
-      - run:
-          name: Install nvm
-          command: |
-            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-            echo 'export NVM_DIR=$HOME/.nvm' >> $BASH_ENV
-            echo 'source $NVM_DIR/nvm.sh' >> $BASH_ENV
       - set-node-version
       - install-deps-cmd
       - run-unit-tests-cmd
