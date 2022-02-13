@@ -18,12 +18,25 @@ executors:
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
-  build-and-test:
+  install-deps:
     executor: node-docker
     working_directory: ~/react-website
     steps:
       - checkout
+      - restore_cache:
+          key: v1-deps-{{ checksum "package-lock.json" }}
       - install-deps-cmd
+      - save_cache:
+          key: v1-deps-{{ checksum "package-lock.json" }}
+          paths:
+            - node_modules
+  test:
+    executor: node-docker
+    working_directory: ~/react-website
+    steps:
+      - checkout
+      - restore_cache:
+          key: v1-deps-{{ checksum "package-lock.json" }}
       - run-unit-tests-cmd
 
 # Invoke jobs via workflows
