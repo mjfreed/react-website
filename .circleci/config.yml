@@ -44,4 +44,7 @@ jobs:
 workflows:
   build-project:
     jobs:
-      - build-and-test
+      - install-deps
+      - test:
+          requires:
+          - install-deps
