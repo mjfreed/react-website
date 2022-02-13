@@ -16,7 +16,7 @@ commands:
 executors:
   node-docker:
     docker:
-      - image: mjfreed/circleci-images:0.0.2
+      - image: mjfreed/circleci-images:0.0.1
         auth:
           username: mjfreed
           password: $DOCKER_PASSWORD
@@ -29,6 +29,10 @@ jobs:
     working_directory: ~/react-website
     steps:
       - checkout
+      - run:
+          name: Install nvm
+          command: |
+            env
       - set-node-version
       - install-deps-cmd
       - run-unit-tests-cmd
