@@ -3,9 +3,6 @@
 version: 2.1
 
 commands:
-  set-node-version: 
-    steps:
-      - run: nvm install && nvm use
   install-deps-cmd:
     steps:
       - run: npm ci
@@ -16,10 +13,7 @@ commands:
 executors:
   node-docker:
     docker:
-      - image: mjfreed/circleci-images:0.0.1
-        auth:
-          username: mjfreed
-          password: $DOCKER_PASSWORD
+      - image: cimg/node:16.13.0
 
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
@@ -29,11 +23,6 @@ jobs:
     working_directory: ~/react-website
     steps:
       - checkout
-      - run:
-          name: Install nvm
-          command: |
-            env
-      - set-node-version
       - install-deps-cmd
       - run-unit-tests-cmd
 
