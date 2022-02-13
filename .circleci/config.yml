@@ -16,7 +16,7 @@ commands:
 executors:
   node-docker:
     docker:
-      - image: mjfreed/circleci-images:0.0.1
+      - image: mjfreed/circleci-images:0.0.2
         auth:
           username: mjfreed
           password: $DOCKER_PASSWORD
