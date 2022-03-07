@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -16,6 +17,10 @@ module.exports = {
                 exclude: /node_modules/,
             },
             {
+                test: /\.html$/,
+                use: ["html-loader"],
+            },
+            {
                 test: /\.css$/i,
                 use: ["style-loader", "css-loader"],
             },
@@ -29,6 +34,11 @@ module.exports = {
             },
         ],
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, "public", "index.html"),
+        }),
+    ],
     performance: {
         hints: false,
         maxEntrypointSize: 512000,
