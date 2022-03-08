@@ -14,15 +14,15 @@ commands:
       - run: npm run build
 
 executors:
-  node-docker:
+  node-docker-with-aws:
     docker:
-      - image: cimg/node:16.13.0
+      - image: mjfreed/circleci-images:0.0.3
 
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
   install-deps:
-    executor: node-docker
+    executor: node-docker-with-aws
     working_directory: ~/react-website
     steps:
       - checkout
@@ -34,7 +34,7 @@ jobs:
           paths:
             - node_modules
   test:
-    executor: node-docker
+    executor: node-docker-with-aws
     working_directory: ~/react-website
     steps:
       - checkout
@@ -42,7 +42,7 @@ jobs:
           key: v1-deps-{{ checksum "package-lock.json" }}
       - run-unit-tests-cmd
   build:
-    executor: node-docker
+    executor: node-docker-with-aws
     working_directory: ~/react-website
     steps:
       - checkout
