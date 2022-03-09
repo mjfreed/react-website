@@ -7,6 +7,7 @@
         "compile": "tsc deployment/deployBuild.ts --outDir ./build",
         "build": "webpack --mode production",
         "deploy": "ts-node deployment/deployBucket.ts",
+        "upload-client": "aws s3 sync dist/ s3://mfreed-website-bucket",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "prepare": "husky install",

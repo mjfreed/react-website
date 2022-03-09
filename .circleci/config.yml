@@ -12,6 +12,12 @@ commands:
   build-project-cmd:
     steps:
       - run: npm run build
+  deploy-cmd:
+    steps:
+      - run: ts-node deployment/deployBucket.ts
+  upload-client-cmd:
+    steps:
+      - run: npm run upload-client
 
 executors:
   node-docker-with-aws:
@@ -49,6 +55,22 @@ jobs:
       - restore_cache:
           key: v1-deps-{{ checksum "package-lock.json" }}
       - build-project-cmd
+  deploy:
+    executor: node-docker-with-aws
+    working_directory: ~/react-website
+    steps:
+      - checkout
+      - restore_cache:
+          key: v1-deps-{{ checksum "package-lock.json" }}
+      - deploy-cmd
+  upload-client:
+    executor: node-docker-with-aws
+    working_directory: ~/react-website
+    steps:
+      - checkout
+      - restore_cache:
+          key: v1-deps-{{ checksum "package-lock.json" }}
+      - upload-client-cmd
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
@@ -56,9 +78,15 @@ workflows:
   build-project:
     jobs:
       - install-deps
-      - test:
-          requires:
-          - install-deps
       - build:
           requires:
+          - install-deps
+      - test:
+          requires:
+          - build
+      - deploy:
+          requires:
           - test
+      - upload-client:
+          requires:
+          - deploy
