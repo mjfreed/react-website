@@ -14,7 +14,7 @@ commands:
       - run: npm run build
   deploy-cmd:
     steps:
-      - run: ts-node deployment/deployBucket.ts
+      - run: npm run deploy
   upload-client-cmd:
     steps:
       - run: npm run upload-client
