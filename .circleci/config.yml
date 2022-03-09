@@ -73,9 +73,9 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          keys:
-            - v1-deps-{{ checksum "package-lock.json" }}
-            - build-files
+          key: v1-deps-{{ checksum "package-lock.json" }}
+      - restore_cache: 
+          key: build-files
 
       - upload-client-cmd
 
