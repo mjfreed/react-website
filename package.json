@@ -6,7 +6,7 @@
         "start": "react-scripts start",
         "compile": "tsc deployment/deployBuild.ts --outDir ./build",
         "build": "webpack --mode production",
-        "deploy": "ts-node deployment/deployBucket.ts",
+        "deploy": "npm install -g ts-node && ts-node deployment/deployBucket.ts",
         "upload-client": "aws s3 sync dist/ s3://mfreed-website-bucket",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
@@ -50,7 +50,6 @@
         "prettier": "^2.4.1",
         "style-loader": "^3.3.1",
         "ts-loader": "^9.2.6",
-        "ts-node": "^10.7.0",
         "webpack": "^5.68.0",
         "webpack-cli": "^4.9.2"
     },
