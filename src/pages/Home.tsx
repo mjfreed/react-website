@@ -5,24 +5,24 @@ import TEUChainLogo from "../assets/TEUChain.jpg";
 import CloudPractitioner from "../assets/cloud_practitioner.png";
 import AssociateDeveloper from "../assets/associate_developer.png";
 import WLogo from "../assets/WLogo.png";
-import ReactImage from "../assets/logo512.png";
+import MainImage from "../assets/Main.jpg";
 import HomepageCell from "../components/HomepageCell";
 
 const Home: React.FC = () => {
     return (
         <>
-            <Segment vertical style={{ marginTop: "3em" }}>
+            <Segment inverted vertical style={{ marginTop: "3em" }}>
                 <Grid container stackable columns="equal">
                     <Grid.Row verticalAlign="middle">
                         <Grid.Column floated="left">
-                            <Header style={{ fontSize: "3em" }}>
+                            <Header inverted style={{ fontSize: "3em" }}>
                                 <span>Hi! I'm Marshall Freed,</span>
                                 <br />
                                 <span>a Software Engineer</span>
                             </Header>
                         </Grid.Column>
                         <Grid.Column floated="right">
-                            <Image size="large" rounded src={ReactImage} />
+                            <Image size="large" circular src={MainImage} />
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
