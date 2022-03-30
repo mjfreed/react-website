@@ -25,3 +25,11 @@ export const outsideWorkplaceBlurb: string = `
     dear to me, is that I'm something of a cat dad. My girlfriend introduced me to her cat (now our cat) years ago and now it's nearly impossible to separate us. I always thought people
     who were obsessed with cats was just something you saw in movies, but lo and behold here I am.
 `;
+
+export const aboutWebsitePreface: string = `
+    I know this seems like overkill for something that is supposed to serve as another form of a resume, but I wanted to take a different approach to this. Apart from this project, my
+    personal GitHub contains old projects from college that are not necessarily a good representation of my skills as a developer. I want this project to not only be another resume but
+    also a showcase of the skills I've learned during my time in the industry. Incorporating a bit of CI/CD, testing suites and a small bit of cloud infrastructure was important for me
+    to include not only to showcase what I've learned, but to also demonstrate my ability and understanding of what is required to deliver a product from the development stage all the way
+    through to a production environment or "customer facing solution", so to speak. So without futher ado, this website is...
+`;
