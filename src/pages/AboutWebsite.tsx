@@ -4,6 +4,10 @@ import ReactImage from "../assets/logo512.png";
 import TypeScript from "../assets/Typescript_logo.png";
 import CypressLogo from "../assets/cypress-logo.png";
 import TestingLibraryLogo from "../assets/testing-library-logo.png";
+import CircleCILogo from "../assets/circleci-logo.png";
+import S3Logo from "../assets/s3-logo.png";
+import CloudFrontLogo from "../assets/cloudfront-logo.png";
+import DockerLogo from "../assets/docker-logo.webp";
 import { aboutWebsitePreface, dummyText } from "../assets/text/text";
 
 const AboutWebsite: React.FC = () => {
@@ -39,12 +43,20 @@ const AboutWebsite: React.FC = () => {
                     <Divider />
                 </Container>
                 <Container>
-                    <Header style={{ fontSize: "2.5em" }}>Built and deployed with CircleCI</Header>
+                    <Header style={{ fontSize: "2.5em" }}>
+                        Built and deployed with Docker and CircleCI
+                        <Image floated="right" src={CircleCILogo} />
+                        <Image floated="right" src={DockerLogo} />
+                    </Header>
                     <p style={{ fontSize: "1.25em" }}>{dummyText}</p>
                     <Divider />
                 </Container>
                 <Container>
-                    <Header style={{ fontSize: "2.5em" }}>Hosted on AWS S3 and served with CloudFront</Header>
+                    <Header style={{ fontSize: "2.5em" }}>
+                        Hosted on AWS S3 and served with CloudFront
+                        <Image floated="right" src={CloudFrontLogo} />
+                        <Image floated="right" src={S3Logo} />
+                    </Header>
                     <p style={{ fontSize: "1.25em" }}>{dummyText}</p>
                     <Divider />
                 </Container>
