@@ -3,7 +3,7 @@
 exports[`Home.tsx renders without crashing 1`] = `
 <div>
   <div
-    class="ui vertical segment"
+    class="ui inverted vertical segment"
     style="margin-top: 3em;"
   >
     <div
@@ -16,7 +16,7 @@ exports[`Home.tsx renders without crashing 1`] = `
           class="left floated column"
         >
           <div
-            class="ui header"
+            class="ui inverted header"
             style="font-size: 3em;"
           >
             <span>
@@ -32,8 +32,8 @@ exports[`Home.tsx renders without crashing 1`] = `
           class="right floated column"
         >
           <img
-            class="ui large rounded image"
-            src="logo512.png"
+            class="ui large circular image"
+            src="Main.jpg"
           />
         </div>
       </div>
