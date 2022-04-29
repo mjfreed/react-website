@@ -18,5 +18,10 @@
         "sourceMap": true,
         "noEmit": true
     },
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS"
+        }
+    },
     "include": ["src"]
 }
