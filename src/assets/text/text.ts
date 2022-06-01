@@ -33,3 +33,27 @@ export const aboutWebsitePreface: string = `
     to include not only to showcase what I've learned, but to also demonstrate my ability and understanding of what is required to deliver a product from the development stage all the way
     through to a production environment or "customer facing solution", so to speak. So without futher ado, this website is...
 `;
+
+export const reactAndTypeScriptBlurb: string = `
+    My career began with React.js and TypeScript which is why I chose to utilize these tools for this website. I don't claim to be a frontend guru by any means so I chose to keep the design
+    of this website simple and "to the point". My main focus while using React was to create reusable components to limit duplicate code, keep source files to a minimum and make each component
+    easy to test. 
+`;
+
+export const testingBlurb: string = `
+    Testing! Everyone's favorite part of development. In all seriousness, no product would be successful without good tests. Tests are crucial to any customer facing product to ensure functionality,
+    making sure the product meets SLA's and necessary for any CI/CD pipeline. For unit tests I chose testing-library because it's a framework I'm familiar with and it seems to have some overlapping
+    concepts with cypress, the end-to-end testing framework used in this project as well.
+`;
+
+export const dockerAndCircleCIBlurb: string = `
+    That's right folks, this website has it's own CI/CD pipeline! Unlike the previous two sections I chose CircleCI because I had never worked with it before and wanted to do some exploring.
+    Honestly, I'm not sure if I'm adhering to best practices when it comes to the pipeline but hey, it works. I also took this opportunity to do a little work with Docker. Like other build platforms
+    CircleCI uses Docker containers to build projects and I wanted one with my specific version of node and the aws cli already installed on it. Click on the "Source" button and check 'em out!
+`;
+
+export const s3AndCloudfrontBlurb: string = `
+    For website hosting and a little cloud infrastructure, I had to go with AWS; I'm certified by them after all. The Source button will show you a CloudFormation script that is used in conjuction
+    with the AWS SDK to create resources and deploy this website to the cloud. The reason for including CloudFront is just to add a little bit of optimization (however small it may be) to the delivery
+    of this website to whomever it may concern.
+`;

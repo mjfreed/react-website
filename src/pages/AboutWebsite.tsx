@@ -7,7 +7,13 @@ import DockerLogo from "../assets/docker-logo.webp";
 import ReactImage from "../assets/logo512.png";
 import S3Logo from "../assets/s3-logo.png";
 import TestingLibraryLogo from "../assets/testing-library-logo.png";
-import { aboutWebsitePreface, dummyText } from "../assets/text/text";
+import {
+    aboutWebsitePreface,
+    dockerAndCircleCIBlurb,
+    reactAndTypeScriptBlurb,
+    s3AndCloudfrontBlurb,
+    testingBlurb,
+} from "../assets/text/text";
 import TypeScript from "../assets/Typescript_logo.png";
 import AboutWebsiteCell from "../components/AboutWebsiteCell";
 
@@ -29,28 +35,28 @@ const AboutWebsite: React.FC = () => {
                     title="Developed with React and TypeScript"
                     logoOne={TypeScript}
                     logoTwo={ReactImage}
-                    blurb={dummyText}
+                    blurb={reactAndTypeScriptBlurb}
                     link="https://github.com/mjfreed/react-website"
                 />
                 <AboutWebsiteCell
                     title="Tested with testing-library and cypress.js"
                     logoOne={CypressLogo}
                     logoTwo={TestingLibraryLogo}
-                    blurb={dummyText}
+                    blurb={testingBlurb}
                     link="https://github.com/mjfreed/react-website/tree/main/src/components/test"
                 />
                 <AboutWebsiteCell
                     title="Built and deployed with Docker and CircleCI"
                     logoOne={CircleCILogo}
                     logoTwo={DockerLogo}
-                    blurb={dummyText}
+                    blurb={dockerAndCircleCIBlurb}
                     link="https://github.com/mjfreed/react-website/tree/main/.circleci"
                 />
                 <AboutWebsiteCell
                     title="Hosted on AWS S3 and served with CloudFront"
                     logoOne={CloudFrontLogo}
                     logoTwo={S3Logo}
-                    blurb={dummyText}
+                    blurb={s3AndCloudfrontBlurb}
                     link="https://github.com/mjfreed/react-website/tree/main/deployment"
                     lastCell
                 />

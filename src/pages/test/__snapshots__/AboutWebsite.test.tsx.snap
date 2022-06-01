@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home.tsx renders without crashing 1`] = `
+<div>
+  <div
+    class="ui inverted segment"
+  >
+    <div
+      class="ui container"
+      style="padding: 5em; margin-top: 1em;"
+    >
+      <div
+        class="ui inverted header"
+        style="font-size: 3em;"
+      >
+        Preface...
+      </div>
+      <div
+        class="ui container"
+      >
+        <p
+          style="font-size: 1.25em;"
+        >
+          
+    I know this seems like overkill for something that is supposed to serve as another form of a resume, but I wanted to take a different approach to this. Apart from this project, my
+    personal GitHub contains old projects from college that are not necessarily a good representation of my skills as a developer. I want this project to not only be another resume but
+    also a showcase of the skills I've learned during my time in the industry. Incorporating a bit of CI/CD, testing suites and a small bit of cloud infrastructure was important for me
+    to include not only to showcase what I've learned, but to also demonstrate my ability and understanding of what is required to deliver a product from the development stage all the way
+    through to a production environment or "customer facing solution", so to speak. So without futher ado, this website is...
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="ui vertical segment"
+  >
+    <div
+      class="ui container"
+    >
+      <div
+        class="ui header"
+        style="font-size: 2.5em;"
+      >
+        Developed with React and TypeScript
+        <img
+          class="ui right floated image"
+          src="Typescript_logo.png"
+        />
+        <img
+          class="ui right floated image"
+          src="logo512.png"
+        />
+      </div>
+      <p
+        style="font-size: 1.25em;"
+      >
+        
+    My career began with React.js and TypeScript which is why I chose to utilize these tools for this website. I don't claim to be a frontend guru by any means so I chose to keep the design
+    of this website simple and "to the point". My main focus while using React was to create reusable components to limit duplicate code, keep source files to a minimum and make each component
+    easy to test. 
+
+      </p>
+      <a
+        class="ui black button"
+        href="https://github.com/mjfreed/react-website"
+        role="button"
+        target="_blank"
+      >
+        <i
+          aria-hidden="true"
+          class="github icon"
+        />
+        Source
+      </a>
+      <div
+        class="ui divider"
+      />
+    </div>
+    <div
+      class="ui container"
+    >
+      <div
+        class="ui header"
+        style="font-size: 2.5em;"
+      >
+        Tested with testing-library and cypress.js
+        <img
+          class="ui right floated image"
+          src="cypress-logo.png"
+        />
+        <img
+          class="ui right floated image"
+          src="testing-library-logo.png"
+        />
+      </div>
+      <p
+        style="font-size: 1.25em;"
+      >
+        
+    Testing! Everyone's favorite part of development. In all seriousness, no product would be successful without good tests. Tests are crucial to any customer facing product to ensure functionality,
+    making sure the product meets SLA's and necessary for any CI/CD pipeline. For unit tests I chose testing-library because it's a framework I'm familiar with and it seems to have some overlapping
+    concepts with cypress, the end-to-end testing framework used in this project as well.
+
+      </p>
+      <a
+        class="ui black button"
+        href="https://github.com/mjfreed/react-website/tree/main/src/components/test"
+        role="button"
+        target="_blank"
+      >
+        <i
+          aria-hidden="true"
+          class="github icon"
+        />
+        Source
+      </a>
+      <div
+        class="ui divider"
+      />
+    </div>
+    <div
+      class="ui container"
+    >
+      <div
+        class="ui header"
+        style="font-size: 2.5em;"
+      >
+        Built and deployed with Docker and CircleCI
+        <img
+          class="ui right floated image"
+          src="circleci-logo.png"
+        />
+        <img
+          class="ui right floated image"
+          src="docker-logo.webp"
+        />
+      </div>
+      <p
+        style="font-size: 1.25em;"
+      >
+        
+    That's right folks, this website has it's own CI/CD pipeline! Unlike the previous two sections I chose CircleCI because I had never worked with it before and wanted to do some exploring.
+    Honestly, I'm not sure if I'm adhering to best practices when it comes to the pipeline but hey, it works. I also took this opportunity to do a little work with Docker. Like other build platforms
+    CircleCI uses Docker containers to build projects and I wanted one with my specific version of node and the aws cli already installed on it. Click on the "Source" button and check 'em out!
+
+      </p>
+      <a
+        class="ui black button"
+        href="https://github.com/mjfreed/react-website/tree/main/.circleci"
+        role="button"
+        target="_blank"
+      >
+        <i
+          aria-hidden="true"
+          class="github icon"
+        />
+        Source
+      </a>
+      <div
+        class="ui divider"
+      />
+    </div>
+    <div
+      class="ui container"
+    >
+      <div
+        class="ui header"
+        style="font-size: 2.5em;"
+      >
+        Hosted on AWS S3 and served with CloudFront
+        <img
+          class="ui right floated image"
+          src="cloudfront-logo.png"
+        />
+        <img
+          class="ui right floated image"
+          src="s3-logo.png"
+        />
+      </div>
+      <p
+        style="font-size: 1.25em;"
+      >
+        
+    For website hosting and a little cloud infrastructure, I had to go with AWS; I'm certified by them after all. The Source button will show you a CloudFormation script that is used in conjuction
+    with the AWS SDK to create resources and deploy this website to the cloud. The reason for including CloudFront is just to add a little bit of optimization (however small it may be) to the delivery
+    of this website to whomever it may concern.
+
+      </p>
+      <a
+        class="ui black button"
+        href="https://github.com/mjfreed/react-website/tree/main/deployment"
+        role="button"
+        target="_blank"
+      >
+        <i
+          aria-hidden="true"
+          class="github icon"
+        />
+        Source
+      </a>
+    </div>
+  </div>
+</div>
+`;
